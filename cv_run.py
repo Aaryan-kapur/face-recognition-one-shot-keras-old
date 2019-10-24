@@ -49,6 +49,7 @@ for (x, y, w, h) in faces:
     lastimg = cv2.resize(faceimg, (32, 32))
     i += 1
     cv2.imwrite("path/image%d.jpg" % i, lastimg)
-
+print(nr)
+# //adding logger
 cap.release()
 cv2.destroyAllWindows()
